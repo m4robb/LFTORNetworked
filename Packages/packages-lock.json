@@ -75,7 +75,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.netcode.gameobjects": {
-      "version": "file:D:/Sources/LFTOR/com.unity.netcode.gameobjects-develop/com.unity.netcode.gameobjects-develop/com.unity.netcode.gameobjects",
+      "version": "file:G:/Repos/LFTORSources/com.unity.netcode.gameobjects-develop/com.unity.netcode.gameobjects-develop/com.unity.netcode.gameobjects-develop/com.unity.netcode.gameobjects",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -88,6 +88,15 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.postprocessing": {
+      "version": "3.2.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.physics": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
