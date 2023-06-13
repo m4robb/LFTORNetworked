@@ -161,7 +161,7 @@ MonoBehaviour:
   sunFlaresHideSpeed: 1
   sunFlaresSolarWindSpeed: 0.01
   sunFlaresTint: {r: 1, g: 1, b: 1, a: 1}
-  sunFlaresDownsampling: 1
+  sunFlaresDownsampling: 2
   sunFlaresSunIntensity: 0.1
   sunFlaresSunDiskSize: 0.05
   sunFlaresSunRayDiffractionIntensity: 3.5
