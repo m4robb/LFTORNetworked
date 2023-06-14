@@ -29,7 +29,7 @@ MonoBehaviour:
   antialiasDepthThreshold: 0.001
   saturate: 0
   contrast: 0.93
-  brightness: 1.05
+  brightness: 1.838
   daltonize: 0
   hardLightIntensity: 0.5
   hardLightBlend: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   bloomLayerMaskDownsampling: 1
-  bloomIntensity: 1
+  bloomIntensity: 0.69
   bloomMaxBrightness: 1000
   bloomBoost0: 0
   bloomBoost1: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
   bloomAntiflicker: 0
   bloomUltra: 0
   bloomUltraResolution: 10
-  bloomThreshold: 0.75
+  bloomThreshold: 0.65
   bloomCustomize: 0
   bloomWeight0: 0.5
   bloomWeight1: 0.5
@@ -95,12 +95,12 @@ MonoBehaviour:
   bloomNearAtten: 0
   bloomLayerZBias: 0.0001
   bloomTint: {r: 1, g: 1, b: 1, a: 0}
-  anamorphicFlares: 0
-  anamorphicFlaresIntensity: 1
+  anamorphicFlares: 1
+  anamorphicFlaresIntensity: 0
   anamorphicFlaresAntiflicker: 0
   anamorphicFlaresUltra: 0
   anamorphicFlaresUltraResolution: 10
-  anamorphicFlaresThreshold: 0.75
+  anamorphicFlaresThreshold: 0.95
   anamorphicFlaresSpread: 1
   anamorphicFlaresVertical: 0
   anamorphicFlaresTint: {r: 0.5, g: 0.5, b: 1, a: 0}
