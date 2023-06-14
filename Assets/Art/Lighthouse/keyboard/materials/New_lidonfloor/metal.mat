@@ -10,7 +10,7 @@ Material:
   m_Name: metal
   m_Shader: {fileID: 4800000, guid: 3334d0a534d2dac45b2c1a9a7e0a6c64, type: 3}
   m_ShaderKeywords: BAKERY_2SIDEDON BAKERY_MONOSH BAKERY_SH BAKERY_SHNONLINEAR _METALLICGLOSSMAP
-    _NORMALMAP
+    _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -50,11 +50,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: a3847efb0a9ebcf47b20feeceabd82b3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 5dff1c4551bde9f49a76e6aa5891c01e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Volume0:
@@ -93,7 +93,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlossMapScale: 0.613
+    - _GlossMapScale: 0.643
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _Metallic: 0
