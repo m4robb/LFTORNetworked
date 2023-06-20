@@ -6,8 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/NetworkedTest01.unity
-    guid: 8b9c5a83d59d41940bf7091cc12898ab
+    path: Assets/Scenes/LFTORNetwork.unity
+    guid: 919bce99bdbce244b82dda6156965f98
+  - enabled: 1
+    path: Assets/Scenes/LighthouseBaked.unity
+    guid: a87b658e5729149419d5012ac920a706
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8d50e80b15cfa1345ba451dd87b982ce, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 773426b8f64d5ae4aa5138d813394400, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: ca16d384df01d4947b352dd167e23740, type: 2}
