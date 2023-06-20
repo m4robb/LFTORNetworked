@@ -3,7 +3,12 @@ guid: 558bfa0cc6c73704ab56e3cc05dbf609
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BossMixer
+    second: {fileID: 2100000, guid: 8569f683e7274814da54cb956896eef9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

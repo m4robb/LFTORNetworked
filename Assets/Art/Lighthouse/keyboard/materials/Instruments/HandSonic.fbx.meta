@@ -3,7 +3,12 @@ guid: a232c28c01018554ca34618c39b3ae1a
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PAD_MULTI_PERCUSSION_ROLAND_HPD_10
+    second: {fileID: 2100000, guid: b93f70cec67860e43bd77b55c63355b0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
