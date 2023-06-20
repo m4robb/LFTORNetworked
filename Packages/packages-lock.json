@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.microsoft.mixedreality.mrcs.unityplugin": {
+      "version": "file:D:/Sources/LFTOR/MRCS.UnityPlugin_2.2.0/com.microsoft.mixedreality.mrcs.unityplugin",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.collab-proxy": {
       "version": "2.0.1",
       "depth": 0,

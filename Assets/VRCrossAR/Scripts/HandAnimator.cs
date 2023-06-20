@@ -30,38 +30,21 @@ public class HandAnimator : MonoBehaviour
     {
         pv = GetComponent<PhotonView>();
         animator = GetComponent<Animator>();
-
-        Debug.Log(pv.IsMine);
-
         if (!pv.IsMine) return;
-
+        if (leftHand)
+        {
+            controller = PlatformManager.instance.vrRigParts[1].GetComponentInChildren<XRController>();
+        }
+        else
+        {
+            controller = PlatformManager.instance.vrRigParts[2].GetComponentInChildren<XRController>();
+        }
     }
-
-
-    bool FoundHands;
 
     private void Update()
     {
         if (!pv.IsMine) return;
         // Store input
-
-        if (!PlatformManager.instance && !FoundHands)
-        {
-
-            FoundHands = true;
-
-            if (leftHand)
-            {
-                controller = PlatformManager.instance.vrRigParts[1].GetComponent<XRController>();
-            }
-            else
-            {
-                controller = PlatformManager.instance.vrRigParts[2].GetComponent<XRController>();
-            }
-        }
-
-        if (!controller) return;
-
         CheckGrip();
         CheckPointer();
 
@@ -76,8 +59,6 @@ public class HandAnimator : MonoBehaviour
 
     private void CheckGrip()
     {
-
-        Debug.Log(controller);
         if (controller.inputDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
             SetFingerTargets(gripfingers, gripValue);
     }

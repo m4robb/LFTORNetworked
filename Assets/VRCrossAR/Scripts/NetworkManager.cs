@@ -14,8 +14,6 @@ namespace Networking.Pun2
         bool triesToConnectToMaster = false;
         bool triesToConnectToRoom = false;
 
-        public string Room;
-
         private void Update()
         {
             if (!PhotonNetwork.IsConnected && !triesToConnectToMaster)
@@ -81,7 +79,7 @@ namespace Networking.Pun2
             base.OnJoinedRoom();
             Debug.Log("Master: " + PhotonNetwork.IsMasterClient + " | Players In Room: " + PhotonNetwork.CurrentRoom.PlayerCount + " | RoomName: " + PhotonNetwork.CurrentRoom.Name + " Region: " + PhotonNetwork.CloudRegion);
             
-            SceneManager.LoadScene(Room); //go to the room scene
+            SceneManager.LoadScene("Room"); //go to the room scene
         }
 
         public override void OnJoinRandomFailed(short returnCode, string message)

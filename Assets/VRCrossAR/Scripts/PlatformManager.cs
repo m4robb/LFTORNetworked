@@ -51,10 +51,8 @@ public class PlatformManager : MonoBehaviourPunCallbacks
 
     void CreateVRBody()
     {
-        GameObject GOBody = PhotonNetwork.Instantiate(vrBody.name, vrRig.gameObject.transform.position, vrRig.gameObject.transform.rotation);
-        GOBody.transform.parent = vrRig.transform;
-        GameObject GOVoice= PhotonNetwork.Instantiate(photonVoiceSetup.name, vrRig.gameObject.transform.position, vrRig.gameObject.transform.rotation);
-        //GOVoice.transform.parent = vrRig.transform;
+        PhotonNetwork.Instantiate(vrBody.name, transform.position, transform.rotation);
+        PhotonNetwork.Instantiate(photonVoiceSetup.name, transform.position, transform.rotation);
     }
 
     void CreateARBody()

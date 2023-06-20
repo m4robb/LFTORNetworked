@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 6126849573364385820}
   - component: {fileID: 6126849573364385823}
   - component: {fileID: 6126849573364385822}
-  - component: {fileID: 3557224892104579408}
+  - component: {fileID: 6126849573364385817}
   - component: {fileID: 6126849573364385816}
   - component: {fileID: 6126849573364385819}
+  - component: {fileID: 4710139626721064315}
+  - component: {fileID: 4078509159149658336}
   m_Layer: 0
   m_Name: PhotonVoiceSetup
   m_TagString: Untagged
@@ -52,9 +54,7 @@ MonoBehaviour:
   voiceDetectionThreshold: 0.01
   voiceDetectionDelayMs: 500
   interestGroup: 0
-  useTargetPlayers: 0
-  targetPlayers: 
-  debugEchoMode: 0
+  debugEchoMode: 1
   reliableMode: 0
   encrypt: 0
   transmitEnabled: 1
@@ -71,10 +71,10 @@ MonoBehaviour:
     Mode: 0
     CategoryOptions: 0800000004000000
   editorAudioSessionPreset: 0
-  androidMicrophoneSettings:
-    EnableAEC: 1
-    EnableAGC: 1
-    EnableNS: 1
+  androidNativeMicrophoneSettings:
+    AcousticEchoCancellation: 1
+    AutomaticGainControl: 1
+    NoiseSuppression: 1
   stopRecordingWhenPaused: 0
   useOnAudioFilterRead: 0
   useMicrophoneTypeFallback: 1
@@ -189,11 +189,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playDelayConfig:
     Low: 200
-    High: 200
+    High: 400
     Max: 1000
     SpeedUpPerc: 5
   restartOnDeviceChange: 1
---- !u!114 &3557224892104579408
+--- !u!114 &6126849573364385817
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6126849573364387813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6073b2161b571fc45b12547bb0463707, type: 3}
+  m_Script: {fileID: 11500000, guid: 86f5dfef25a9425449004fabae9e684e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &6126849573364385816
@@ -223,7 +223,8 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 4710139626721064315}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -239,3 +240,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 126494ae2a10a34499272ed97a6c9f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4710139626721064315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126849573364387813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 0
+--- !u!114 &4078509159149658336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126849573364387813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a509dbf839e0e4044a7affab5b5a3e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSourceType: 1
+  CaptureAudio: 0
+  _mode: 0
+  _smoothing: 0
+  _audioSampleRate: 48000
