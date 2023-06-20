@@ -10,8 +10,8 @@ public class SetMicrophone : MonoBehaviourPun
         string[] devices = Microphone.devices;
         if (devices.Length > 0)
         {
-            Recorder recorder = GetComponent<Recorder>();
-            recorder.UnityMicrophoneDevice = devices[0];
+            //Recorder recorder = GetComponent<Recorder>();
+            //recorder.UnityMicrophoneDevice = devices[0];
         }
     }
 }

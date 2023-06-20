@@ -17,6 +17,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: metal.001
+    second: {fileID: 2100000, guid: a5f03edf1649ede42a8e5ad646c0aec7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: wooden_leg
     second: {fileID: 2100000, guid: b6bcf5e3f9c288a489f52c5f3ac2ea05, type: 2}
   materials:
