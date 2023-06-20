@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: wood
   m_Shader: {fileID: 4800000, guid: 3334d0a534d2dac45b2c1a9a7e0a6c64, type: 3}
-  m_ShaderKeywords: BAKERY_LMSPEC BAKERY_MONOSH BAKERY_SHNONLINEAR _EMISSION _METALLICGLOSSMAP
+  m_ShaderKeywords: BAKERY_LMSPEC BAKERY_SHNONLINEAR _EMISSION _METALLICGLOSSMAP
     _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -78,7 +78,7 @@ Material:
     - _BAKERY_2SIDEDON: 0
     - _BAKERY_BICUBIC: 0
     - _BAKERY_LMSPEC: 1
-    - _BAKERY_MONOSH: 1
+    - _BAKERY_MONOSH: 0
     - _BAKERY_PROBESHNONLINEAR: 0
     - _BAKERY_RNM: 0
     - _BAKERY_SH: 0

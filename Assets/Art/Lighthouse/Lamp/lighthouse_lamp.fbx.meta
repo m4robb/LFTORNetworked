@@ -45,7 +45,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties:
-    - '#BAKERY{"meshName":["glas_body01","leg","metall"],"padding":[69,83,138],"unwrapper":[0,0,0]}'
+    - '#BAKERY{"meshName":["glas_body01","leg","metall"],"padding":[34,41,69],"unwrapper":[0,0,0]}'
     clipAnimations: []
     isReadable: 0
   meshes:

@@ -15,14 +15,14 @@ MonoBehaviour:
   mipmapLightmaps: 0
   format8bit: 0
   formatHDR: 0
-  lightmapCompression: 0
+  lightmapCompression: 2
   maxAssetMip: 100
   dirHighQuality: 1
   texelPaddingForDefaultAtlasPacker: 3
   texelPaddingForXatlasAtlasPacker: 1
   alphaMetaPassResolutionMultiplier: 2
-  volumeRenderMode: 1000
-  deletePreviousLightmapsBeforeBake: 0
+  volumeRenderMode: 0
+  deletePreviousLightmapsBeforeBake: 1
   logLevel: 3
   alternativeScaleInLightmap: 0
   alignToTextureBlocksWithXatlas: 1

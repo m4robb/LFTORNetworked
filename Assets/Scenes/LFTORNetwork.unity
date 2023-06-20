@@ -282,6 +282,8 @@ MonoBehaviour:
   anyVolumes: 0
   compressedVolumes: 0
   sectors: []
+  prevBakedProbes: []
+  prevBakedProbePos: []
 --- !u!4 &609439754
 Transform:
   m_ObjectHideFlags: 1
@@ -661,7 +663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0925913b844808f42b52c68cdaf9494f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Room: LightHouse
+  Room: LightHouseBaked
 --- !u!4 &1677589529
 Transform:
   m_ObjectHideFlags: 0
