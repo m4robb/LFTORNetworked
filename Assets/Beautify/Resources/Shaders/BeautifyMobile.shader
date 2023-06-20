@@ -81,7 +81,7 @@ Subshader {
 // Disabled by Shader Control: #pragma multi_compile_local __ BEAUTIFY_OUTLINE
 // Disabled by Shader Control: #pragma multi_compile_local __ BEAUTIFY_DIRT
 #pragma multi_compile_local __ BEAUTIFY_BLOOM
-#pragma multi_compile_local __ BEAUTIFY_EYE_ADAPTATION
+// Disabled by Shader Control: #pragma multi_compile_local __ BEAUTIFY_EYE_ADAPTATION
 #pragma multi_compile_local __ BEAUTIFY_TONEMAP_ACES
 // Disabled by Shader Control: #pragma multi_compile_local __ BEAUTIFY_PURKINJE
 // Disabled by Shader Control: #pragma multi_compile_local __ BEAUTIFY_VIGNETTING BEAUTIFY_VIGNETTING_MASK
