@@ -1,26 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Photon.Realtime;
 using Photon.Pun;
 
 public class PunComm : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+{ 
+    
+    
+
+    public UnityEvent EventStartPerformance;
+
+    public void StartPerformanceReceive()
     {
-        
+        if (EventStartPerformance != null) EventStartPerformance.Invoke();
     }
 
-    public void StartPerformance()
+    public void StartPerformanceSend()
     {
         PhotonView photonView = PhotonView.Get(this);
-        photonView.RPC("ChatMessage", RpcTarget.All, "jup", "and jup.");
+        photonView.RPC("StartPerformanceReceive", RpcTarget.All);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
