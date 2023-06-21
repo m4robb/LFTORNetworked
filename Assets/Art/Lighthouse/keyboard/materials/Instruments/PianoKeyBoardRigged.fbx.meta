@@ -3,7 +3,32 @@ guid: c4e06f9f30ec5fd43a7cebe77db26f72
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HousingFrame
+    second: {fileID: 2100000, guid: ea7bc2e69fae6364e8220f45a0dd2c7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HousingLighting
+    second: {fileID: 2100000, guid: d33773708ccad944cb3aa3609fe245de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black key
+    second: {fileID: 2100000, guid: 8efe88faa6be892489477d6c2eaabc9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pedalHinge
+    second: {fileID: 2100000, guid: 93a6bcbe0ab4e4945962101d741f39e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white key
+    second: {fileID: 2100000, guid: 03dc7a5be04f35740ab7885e1b804c34, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

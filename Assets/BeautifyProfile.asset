@@ -27,8 +27,8 @@ MonoBehaviour:
   superSampling: 1
   antialiasStrength: 5
   antialiasDepthThreshold: 0.001
-  saturate: 0
-  contrast: 1.01
+  saturate: 0.63
+  contrast: 1
   brightness: 1.116
   daltonize: 0
   hardLightIntensity: 0.5
@@ -66,7 +66,7 @@ MonoBehaviour:
   chromaticAberration: 0
   chromaticAberrationIntensity: 0
   chromaticAberrationSmoothing: 0
-  bloom: 1
+  bloom: 0
   bloomCullingMask:
     serializedVersion: 2
     m_Bits: 512

@@ -663,7 +663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0925913b844808f42b52c68cdaf9494f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Room: LightHouseBaked02
+  Destination: LighthouseBaked02
 --- !u!4 &1677589529
 Transform:
   m_ObjectHideFlags: 0

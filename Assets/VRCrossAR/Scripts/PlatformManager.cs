@@ -18,7 +18,7 @@ public class PlatformManager : MonoBehaviourPunCallbacks
     public Transform arCamera;
 
     [SerializeField] GameObject vrBody;
-    enum Mode { VR, AR};
+    enum Mode { VR, AR };
     [Tooltip("Choose the mode before building, also you should change the XR Plugin Manager settings")]
     [SerializeField] Mode mode;
 
@@ -36,12 +36,12 @@ public class PlatformManager : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        if(mode == Mode.VR)
+        if (mode == Mode.VR)
         {
             vrRig.SetActive(true);
             CreateVRBody();
         }
-        else if(mode == Mode.AR)
+        else if (mode == Mode.AR)
         {
             arSession.SetActive(true);
             arRig.SetActive(true);
@@ -51,8 +51,10 @@ public class PlatformManager : MonoBehaviourPunCallbacks
 
     void CreateVRBody()
     {
-        PhotonNetwork.Instantiate(vrBody.name, transform.position, transform.rotation);
-        PhotonNetwork.Instantiate(photonVoiceSetup.name, transform.position, transform.rotation);
+        GameObject GOBody = PhotonNetwork.Instantiate(vrBody.name, vrRig.gameObject.transform.position, vrRig.gameObject.transform.rotation);
+        GOBody.transform.parent = vrRig.transform;
+        GameObject GOVoice = PhotonNetwork.Instantiate(photonVoiceSetup.name, vrRig.gameObject.transform.position, vrRig.gameObject.transform.rotation);
+        //GOVoice.transform.parent = vrRig.transform;
     }
 
     void CreateARBody()
